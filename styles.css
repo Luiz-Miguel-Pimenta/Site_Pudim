@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color: rgb(222, 179, 98);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(227, 211, 184, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 6rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;   
+}
+
+@keyframes tremer {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg) scale(1.05); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    animation: tremer 1.5s infinite;
+}
+
+.logo h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #e08146;
+    margin: 1rem;
+    text-shadow: 4px 3px 0px #7A7A7A;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+header nav ul a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: coral;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+header nav ul a::before{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #e7a57d;
+    transition: width 0.5s ease;
+}
+
+header nav ul a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+main{
+    padding: 0 1rem 0 1rem;
+    margin-top: 30px;
+}
+
+#Historia{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Historia h2{
+    padding: 1rem;
+    background: #e08146;
+    margin: 7rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    max-width: 150px;
+    font-size: 2rem;
+}
+
+.bloco{
+    padding: 0 0 0 0.5rem;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #e38145bc;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
+.bloco p{
+    text-align: justify;
+    color: #111;
+    width: 40%;
+    font-size: 25px;
+    margin: 0 2rem 0 2rem;
+}
+
+.bloco ul{
+    list-style: none;
+    background-image: url(img/pudim_plano_fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 5px;
+    flex: 1;
+    border-radius: 0 20px 20px 0;
+    text-align: justify;
+}
+
+.bloco ul li{
+    margin: 10px;
+    font-size: 19px;
+    color: #5a2e0c;
+}
+
+
+
+
+
+#Receita{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Receita h2{
+    padding: 1rem;
+    background: #e08146;
+    margin: 8rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    max-width: 150px;
+    font-size: 2rem;
+}
+
+.caixa_Receita{
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #e38145bc;
+    border-radius: 20px;
+    border: 3px solid orange;
+    overflow: hidden;
+}
+
+#Receita h3{
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#caixa_Receita_primeiro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    background-image: url(img/pudim_fundo.jpg);
+    background-size: cover;
+}
+
+#caixa_Receita_primeiro ul{
+   list-style: circle;
+}
+
+#caixa_Receita_primeiro ul li{
+    margin: 10px;
+    font-size: 22px;
+}
+
+#caixa_Receita_segundo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+#caixa_Receita_segundo ol{
+    text-align: justify;
+    padding: 0 1.5rem 0.5rem 1.7rem;
+}
+
+#caixa_Receita_segundo ol li{
+    margin: 10px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19.5px;
+}
+
+#caixa_Receita_segundo ol li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-right: 10px solid #f4af1b;
+    border-radius: 0 10px 10px 0 ;
+    transform: translateX(5px);
+}
+
+#caixa_Receita_segundo ol li::marker {
+    font-weight: bold;
+    color: #000000; /* ou outra cor */
+}
+
+
+
+
+
+
+#imagens{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#imagens h2{
+    padding: 1rem;
+    background: #e08146;
+    margin: 7rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    max-width: 160px;
+    font-size: 2rem;
+}
+
+#imagens_bloco{
+    margin: 0 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+#imagens_bloco img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid orange;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#imagens_bloco img:hover{
+    transform: translateY(-10px) scale(1.09);
+}
+
+footer{
+    padding: 2rem;
+    background-color: #e3d3b8;
+    text-align: center;
+    font-size: 20px;
+}
