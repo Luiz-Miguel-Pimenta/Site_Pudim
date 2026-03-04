@@ -94,9 +94,6 @@ main{
 }
 
 #Historia{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding-top: 9rem;
 }
 
@@ -105,7 +102,7 @@ main{
     background: #e08146;
     margin: 0 1rem 1rem 1rem;
     border-radius: 10px;
-    max-width: 150px;
+    display: inline-block;
     font-size: 2rem;
 }
 
@@ -150,9 +147,6 @@ main{
 
 
 #Receita{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding-top: 9rem;
 }
 
@@ -161,7 +155,7 @@ main{
     background: #e08146;
     margin: 0rem 1rem 1rem 1rem;
     border-radius: 10px;
-    max-width: 150px;
+    display: inline-block;
     font-size: 2rem;
 }
 
@@ -236,9 +230,6 @@ main{
 
 
 #imagens{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding-top: 9rem;
     margin-bottom: 2rem;
 }
@@ -248,7 +239,7 @@ main{
     background: #e08146;
     margin: 0rem 1rem 1rem 1rem;
     border-radius: 10px;
-    max-width: 160px;
+    display: inline-block;
     font-size: 2rem;
 }
 
@@ -319,11 +310,6 @@ footer{
         border-radius: 0 0 20px 20px;
     }
 
-    #caixa_Receita_primeiro,
-    #caixa_Receita_segundo{
-        width: 100%;
-    }
-
     .caixa_Receita{
         flex-direction: column;
     }
@@ -331,6 +317,5 @@ footer{
     #imagens_bloco{
         grid-template-columns: 1fr;
     }
-
-
+    
 }
